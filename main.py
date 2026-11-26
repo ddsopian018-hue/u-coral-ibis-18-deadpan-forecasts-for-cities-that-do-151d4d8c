@@ -8,6 +8,7 @@ The line is a flat, deadpan TV-weather read for Brindlewick: a high of
 38 degrees, scattered showers of warm gravy, and 45 kilometre-per-hour
 winds carrying umbrellas north until Tuesday. Absurd weather, broadcast
 tone, one concrete image, and two numbers to make the place feel real.
+It uses 153 of the 160 allowed characters.
 """
 
 import os
@@ -51,6 +52,7 @@ def main() -> int:
         f.write(line + "\n")
 
     print("wrote %s (%d characters)" % (out_path, len(line)))
+    print(line)
     return 0
 
 
